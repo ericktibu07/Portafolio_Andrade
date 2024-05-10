@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Erick</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/FOTO.png" alt="">
+            </div>
+            <h1>Erick Andrade</h1>
+            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="https://github.com/ericktibu07"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/erickandrade9853/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+593998881771"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/erick-m-andrade-pichoasamin-47b322275/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://drive.google.com/drive/folders/1bmlWVT_8gMTT-rrWO0MImoMQXxTUgRbp?usp=sharing"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Erick Andrade.</span> Soy ingeniero en Software de la Universidad de las Fuerzas Armadas - ESPE, amo los atardeceres y 
+                leer en la orilla de la playa, soy una persona que adora el ejercicio en especial el baloncesto, una de mis debilidades son los perros en especial los Huskey, me parecen adorables y con una belleza innata.</p>
+            <p>Soy una persona que adora los paseos en el bosque y salir a despejar la mente, aunque mi verdadero amor esta entre las olas del mar, podria pasar nadando por horas y seria el hombre más feliz del mundo</p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-03-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +593 99 888 1771
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            emandrade7@espe.edu.ec
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://github.com/ericktibu07
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Gonzales Suarez y Rio Frio 
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>R</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>IA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Machine Learning</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ciberseguridad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachillerato en ciencias</h4>
+                        <span class="casa">Instituto Nacional Mejía</span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p>Estudie en el Colegio Mejia, el primer colegio laico del Ecuador, fue una de las mejores experiencias de mi vida, definitivamente, marco un antes y un despues en mi crecimiento personal y profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Software</h4>
+                        <span class="casa">Universidad de las Fuerzas Armadas - ESPE</span>
+                        <span class="fecha">2019 - 2025</span>
+                        <p>Mi educación superior la cruce en la Universidad de las Fuerzas Armadas - ESPE, en la cual fue mi punto de inicio para conocer el hermoso mundo de la programación.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en redes</h4>
+                        <span class="casa">Cisco</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>En Cisco aprendi muchisimo, desde Ciberseguridad hasta redes, siempre les estare profundamente agradecidos, entre sus proyectos y estudio aprendi que las redes y telecomunicaciones son mi fuerte, aunque una de mis mayores paciones es la Ciberseguridad. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Cableado estructural y conexiones</h4>
+                        <span class="casa">Mundo.Net</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Mundo.Net fue el primer lugar que me abrio sus puertas, sus dueños confiaron en mi conocimiento e hice un gran trabajo en el montaje del equipo y ensamblaje de redes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador Grafico</h4>
+                        <span class="casa">Joyeria y relojeria "El Tiempo"</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>Me contrataron para ayudarlos en el manejo y operación de los pantografos electricos, ademas del diseño para trofeos y medallas a traves de impresiones con corte en lazer o gravado a traves de la tecnica de pantografia</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Manejo y operación de bases de datos</h4>
+                        <span class="casa">Galaper</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Galaper destaca por ser una agencia de viajes muy importante en el Sangolqui, por lo que manejan un abanico muy grande de clientes, dado a esa circunstancia, con mi conocimiento logramos optimizar de tal manera el proceso que llevan en la empresa para hacerlos muy eficaces y veloces</p>                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Businness Intelligence Foundation</h3>
+                        <p>CertiProf</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Cyber Threat Management</h3>
+                        <p>Cisco</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Endpoint Security</h3>
+                        <p>Cisco</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Lean Six Sigma White Belt</h3>
+                        <p>CertiProf</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Machine Learning Onramp</h3>
+                        <p>MathWorks</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Scrum Foundation</h3>
+                        <p>CertiProf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Gonzales Suarez y Rio Frio lote Nª4
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 
+                                022566902
+                                0998881771 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: emandrade7@espe.edu.ec
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/ericktibu07"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/erickandrade9853/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+593998881771"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/erick-m-andrade-pichoasamin-47b322275/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://drive.google.com/drive/folders/1bmlWVT_8gMTT-rrWO0MImoMQXxTUgRbp?usp=sharing"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
